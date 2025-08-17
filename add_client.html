@@ -1,1 +1,12 @@
-
+{% extends "base.html" %}
+{% block content %}
+<h2>Ajouter un client</h2>
+<form method="post">
+    Nom: <input type="text" name="nom" required><br><br>
+    Prénom: <input type="text" name="prenom" required><br><br>
+    Téléphone: <input type="text" name="telephone"><br><br>
+    Abonnement: <input type="text" name="abonnement"><br><br>
+    Date inscription: <input type="date" name="date_inscription"><br><br>
+    <button type="submit">✅ Enregistrer</button>
+</form>
+{% endblock %}
