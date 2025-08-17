@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Salle de Sport</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Salle de Sport - Gestion Clients</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">🏠 Accueil</a> |
+        <a href="{{ url_for('add_client') }}">➕ Ajouter un client</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
